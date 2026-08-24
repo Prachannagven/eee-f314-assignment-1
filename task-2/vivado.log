@@ -18,3 +18,5 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/pranav/PersonalProjects
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_2/Vivado/2019.2/data/ip'.
 open_project: Time (s): cpu = 00:00:47 ; elapsed = 00:00:18 . Memory (MB): peak = 6648.840 ; gain = 215.504 ; free physical = 682 ; free virtual = 32635
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 25 01:50:40 2026...
