@@ -23,7 +23,9 @@
 module top (
     input  wire i_clk,
     input  wire i_rst,
-    output reg  o_pattern_valid
+    output reg o_current_val,
+    output wire  o_pattern_valid,
+    output wire o_clk_slow
 );
 
     wire enable;
@@ -32,7 +34,8 @@ module top (
     clockdiv cdiv (
         .i_clk(i_clk),
         .i_rst(i_rst),
-        .o_en (enable)
+        .o_en (enable),
+        .o_clk(o_clk_slow)
     );
 
     detector uut_det (
@@ -49,5 +52,14 @@ module top (
         .i_rst(i_rst),
         .o_pattern_dat(data)
     );
+    
+    always @(posedge i_clk or posedge i_rst) begin
+        if(i_rst) begin
+            o_current_val <= 1'b0;
+        end
+        else if(enable) begin
+            o_current_val <= data;
+        end
+    end
 
 endmodule

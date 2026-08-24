@@ -4,7 +4,7 @@ module generator (
     input  wire i_clk,
     input  wire i_rst,
     input  wire i_en,
-    output reg  o_pattern_dat
+    output wire  o_pattern_dat
 );
 
     localparam [119:0] TEST_STREAM = {

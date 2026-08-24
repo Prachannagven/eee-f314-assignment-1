@@ -21,12 +21,13 @@
 
 
 module clockdiv #(
-    parameter DESIRED_FREQ = 10,
+    parameter DESIRED_FREQ = 1,
     parameter IP_FREQ = 125000000
 ) (
     input  wire i_clk,
     input  wire i_rst,
-    output reg  o_en
+    output reg  o_en,
+    output reg o_clk
 );
 
     localparam integer SETPOINT = (IP_FREQ) / (2 * DESIRED_FREQ);
@@ -38,9 +39,11 @@ module clockdiv #(
         if (i_rst) begin
             counter <= 'b0;
             o_en <= 1'b0;
+            o_clk <= 0;
         end else if (counter == SETPOINT - 1) begin
             counter <= 'b0;
-            o_en <= 1'b1;
+            o_clk <= ~o_clk;
+            o_en <= ~o_clk;
         end else begin
             counter <= counter + 1'b1;
             o_en <= 1'b0;
