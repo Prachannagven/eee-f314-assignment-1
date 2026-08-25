@@ -61,9 +61,10 @@ module top_tb ();
     // DUT
     // ============================================================
 
-    top dut (
+    detector dut (
         .i_clk           (i_clk),
         .i_dat_in        (i_dat_in),
+        .i_en            (1'b1),
         .i_rst           (i_rst),
         .o_pattern_valid (o_pattern_valid)
     );

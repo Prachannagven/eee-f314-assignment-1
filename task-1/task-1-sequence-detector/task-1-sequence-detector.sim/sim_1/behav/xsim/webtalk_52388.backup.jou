@@ -2,11 +2,11 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat Aug 22 15:21:33 2026
-# Process ID: 68000
+# Start of session at: Tue Aug 25 15:27:09 2026
+# Process ID: 52388
 # Current directory: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim
-# Command line: wbtcv -mode batch -source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv -mode batch -source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace

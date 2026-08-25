@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Aug 24 19:30:13 2026
-# Process ID: 231334
+# Start of session at: Tue Aug 25 15:19:38 2026
+# Process ID: 50711
 # Current directory: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1
 # Command line: vivado
 # Log file: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/vivado.log
@@ -16,62 +16,455 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/pranav/PersonalProjects/vivado_ip_cores'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_2/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 6586.090 ; gain = 142.395 ; free physical = 331 ; free virtual = 27434
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:10 . Memory (MB): peak = 6672.535 ; gain = 218.895 ; free physical = 1587 ; free virtual = 32513
 update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 6
-[Mon Aug 24 19:31:35 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Mon Aug 24 14:04:26 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Mon Aug 24 14:06:18 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Mon Aug 24 14:07:33 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7z020clg400-1
-INFO: [Device 21-403] Loading part xc7z020clg400-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7007.461 ; gain = 0.000 ; free physical = 956 ; free virtual = 27185
-INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7121.301 ; gain = 0.000 ; free physical = 871 ; free virtual = 27101
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sources_1/imports/new/clockdiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdiv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sources_1/new/detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sources_1/new/generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2019_2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'i_dat_in' on this module [/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sim_1/new/top_tb.v:66]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sources_1/new/detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2019_2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.detector
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
 
-open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 7278.586 ; gain = 463.508 ; free physical = 691 ; free virtual = 26930
-place_ports i_clk H16
-place_ports i_rst L19
-place_ports o_current_val M14
-place_ports o_pattern_valid G17
-file mkdir /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/constrs_1/new
-close [ open /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/constrs_1/new/constraints.xdc w ]
-add_files -fileset constrs_1 /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/constrs_1/new/constraints.xdc
-set_property target_constrs_file /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/constrs_1/new/constraints.xdc [current_fileset -constrset]
-save_constraints -force
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Mon Aug 24 14:11:34 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-[Mon Aug 24 14:11:34 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/runme.log
-reset_run impl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Mon Aug 24 14:14:02 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-[Mon Aug 24 14:14:02 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/runme.log
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:06 . Memory (MB): peak = 400.324 ; gain = 0.000 ; free physical = 1426 ; free virtual = 32456
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 25 15:22:08 2026...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 6739.547 ; gain = 0.000 ; free physical = 1487 ; free virtual = 32517
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+------------------------------------------------------------
+TEST 1:      0010 at end
+INPUT: 000000001010
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 2:      0100 at end
+INPUT: 000000000100
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 3: 010 at beginning
+INPUT: 000000100000
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 4: 100 at beginning
+INPUT: 000001000000
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 5:    0010 near end
+INPUT: 000000010010
+------------------------------------------------------------
+  ERROR: o_pattern_valid did not return LOW
+
+------------------------------------------------------------
+TEST 6:    0100 near end
+INPUT: 000000010100
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 7:         All ones
+INPUT: 000011111111
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 8:        All zeros
+INPUT: 000000000000
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 9: rnating 10101010
+INPUT: 000010101010
+------------------------------------------------------------
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 6896.395 ; gain = 156.848 ; free physical = 1405 ; free virtual = 32479
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj top_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2019_2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdiv_default
+Compiling module xil_defaultlib.detector
+Compiling module xil_defaultlib.generator
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 25 15:25:40 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 6979.250 ; gain = 82.855 ; free physical = 1207 ; free virtual = 32437
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj top_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2019_2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6979.250 ; gain = 0.000 ; free physical = 1308 ; free virtual = 32541
+set_property top detector_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'detector_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj detector_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sources_1/new/detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot detector_tb_behav xil_defaultlib.detector_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2019_2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot detector_tb_behav xil_defaultlib.detector_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.detector
+Compiling module xil_defaultlib.detector_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot detector_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim/xsim.dir/detector_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 25 15:29:24 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "detector_tb_behav -key {Behavioral:sim_1:Functional:detector_tb} -tclbatch {detector_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source detector_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'detector_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 6994.258 ; gain = 15.008 ; free physical = 674 ; free virtual = 32187
+update_compile_order -fileset sim_1
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sources_1/new/detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2019_2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b1ae8ddbf7024bc38d3a7ead454bcd1e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.detector
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+------------------------------------------------------------
+TEST 1:      0010 at end
+INPUT: 000000001010
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 2:      0100 at end
+INPUT: 000000000100
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 3: 010 at beginning
+INPUT: 000000100000
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 4: 100 at beginning
+INPUT: 000001000000
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 5:    0010 near end
+INPUT: 000000010010
+------------------------------------------------------------
+  ERROR: o_pattern_valid did not return LOW
+
+------------------------------------------------------------
+TEST 6:    0100 near end
+INPUT: 000000010100
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 7:         All ones
+INPUT: 000011111111
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 8:        All zeros
+INPUT: 000000000000
+------------------------------------------------------------
+  PASS
+
+------------------------------------------------------------
+TEST 9: rnating 10101010
+INPUT: 000010101010
+------------------------------------------------------------
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7034.277 ; gain = 40.020 ; free physical = 826 ; free virtual = 32223
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
 open_project /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.xpr
 Scanning sources...
 Finished scanning sources
@@ -79,333 +472,150 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/pranav/PersonalProjects/vivado_ip_cores'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_2/Vivado/2019.2/data/ip'.
 update_compile_order -fileset sources_1
-file mkdir /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/constrs_1
-file mkdir /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/constrs_1/new
-close [ open /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/constrs_1/new/constraints.xdc w ]
-add_files -fileset constrs_1 /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/constrs_1/new/constraints.xdc
-current_project task-1-sequence-detector
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Mon Aug 24 14:16:46 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-[Mon Aug 24 14:16:46 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/runme.log
-current_project task-2-password-locker
-current_project task-1-sequence-detector
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Mon Aug 24 14:19:49 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/runme.log
-current_project task-2-password-locker
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj top_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/sources_1/imports/new/clockdiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdiv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/sources_1/new/mealy-detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim'
+xelab -wto c502d655921e4a2db7bf8ff3bd06e5e7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2019_2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto c502d655921e4a2db7bf8ff3bd06e5e7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdiv_default
+Compiling module xil_defaultlib.mealy_detector
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
 
-****** Xilinx hw_server v2019.2
-  **** Build date : Nov  6 2019 at 22:13:42
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-****** Xilinx cs_server v2019.2.0
-  **** Build date : Nov 07 2019-11:11:48
-    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
-
-
-
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3414] Connected to existing cs_server.
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 8856.652 ; gain = 1047.035 ; free physical = 1043 ; free virtual = 25808
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-current_project task-1-sequence-detector
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Mon Aug 24 14:22:22 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-[Mon Aug 24 14:22:22 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/runme.log
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8910.051 ; gain = 0.000 ; free physical = 1891 ; free virtual = 25562
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.30 . Memory (MB): peak = 9150.980 ; gain = 0.000 ; free physical = 1738 ; free virtual = 25399
-Restored from archive | CPU: 0.130000 secs | Memory: -3.685234 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.30 . Memory (MB): peak = 9150.980 ; gain = 0.000 ; free physical = 1738 ; free virtual = 25399
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9150.980 ; gain = 0.000 ; free physical = 1738 ; free virtual = 25399
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-close_hw_manager
-close_design
-close_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 9280.027 ; gain = 0.000 ; free physical = 1436 ; free virtual = 25279
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Mon Aug 24 14:45:30 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-[Mon Aug 24 14:45:30 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Mon Aug 24 14:46:40 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/synth_1/runme.log
-[Mon Aug 24 14:46:40 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2019.2
-  **** Build date : Nov  6 2019 at 22:13:42
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-****** Xilinx cs_server v2019.2.0
-  **** Build date : Nov 07 2019-11:11:48
-    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
-
-
-
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-current_project task-2-password-locker
-launch_runs synth_1 -jobs 6
-[Mon Aug 24 14:53:05 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/synth_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Mon Aug 24 14:54:53 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 6
-[Mon Aug 24 14:56:23 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Mon Aug 24 14:58:18 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/runme.log
-close_hw_manager
-current_project task-1-sequence-detector
-close_design
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2019.2
-  **** Build date : Nov  6 2019 at 22:13:42
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-****** Xilinx cs_server v2019.2.0
-  **** Build date : Nov 07 2019-11:11:48
-    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
-
-
-
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-current_project task-2-password-locker
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Mon Aug 24 15:06:29 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/synth_1/runme.log
-[Mon Aug 24 15:06:30 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2019.2
-  **** Build date : Nov  6 2019 at 22:13:42
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-****** Xilinx cs_server v2019.2.0
-  **** Build date : Nov 07 2019-11:11:48
-    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
-
-
-
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Mon Aug 24 15:11:11 2026] Launched synth_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/synth_1/runme.log
-[Mon Aug 24 15:11:11 2026] Launched impl_1...
-Run output will be captured here: /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/runme.log
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 9371.215 ; gain = 0.000 ; free physical = 1865 ; free virtual = 25336
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 9435.238 ; gain = 0.000 ; free physical = 1747 ; free virtual = 25209
-Restored from archive | CPU: 0.050000 secs | Memory: 0.107674 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 9435.238 ; gain = 0.000 ; free physical = 1747 ; free virtual = 25209
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9435.238 ; gain = 0.000 ; free physical = 1747 ; free virtual = 25209
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 9499.270 ; gain = 128.055 ; free physical = 1687 ; free virtual = 25170
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-close_hw_manager
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3414] Connected to existing cs_server.
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-current_project task-1-sequence-detector
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-close_project
 ****** Webtalk v2019.2 (64-bit)
   **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
   **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-1/task-1-sequence-detector/task-1-sequence-detector.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Aug 24 15:34:25 2026...
-close_design
+source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 25 15:34:01 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7034.277 ; gain = 0.000 ; free physical = 1225 ; free virtual = 32223
+file mkdir /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/sim_1/new/top_tb.v w ]
+add_files -fileset sim_1 /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/sim_1/new/top_tb.v
+update_compile_order -fileset sim_1
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property top mealy_detector_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mealy_detector_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj mealy_detector_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_detector_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim'
+xelab -wto c502d655921e4a2db7bf8ff3bd06e5e7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mealy_detector_tb_behav xil_defaultlib.mealy_detector_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2019_2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto c502d655921e4a2db7bf8ff3bd06e5e7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mealy_detector_tb_behav xil_defaultlib.mealy_detector_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mealy_detector
+Compiling module xil_defaultlib.mealy_detector_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mealy_detector_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim/xsim.dir/mealy_detector_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 25 15:36:23 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mealy_detector_tb_behav -key {Behavioral:sim_1:Functional:mealy_detector_tb} -tclbatch {mealy_detector_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source mealy_detector_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 506 ns : File "/home/pranav/Documents/4-2-notes/fpga-lab/fpga-assignment-1/task-2/task-2-password-locker/task-2-password-locker.srcs/sim_1/new/top_tb.v" Line 166
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mealy_detector_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7046.711 ; gain = 12.434 ; free physical = 1489 ; free virtual = 32444
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7046.711 ; gain = 0.000 ; free physical = 1418 ; free virtual = 32419
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 24 15:34:32 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 25 15:37:14 2026...
